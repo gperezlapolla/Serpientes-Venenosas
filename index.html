@@ -4,78 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/CSS/styles.css">
-    <script src="https://kit.fontawesome.com/b461c04c22.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-9mFkTm3u1eIYOP1Hv9Ph4PrH/a+5n0y6eDp+J0OFSJUW3yA8UZkYKG9wXwZgDAZN" crossorigin="anonymous">
+    <style>
+        /* Agrega tus estilos CSS aquí */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        .cobra {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .cobra img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .caracteristicas {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .caracteristicas p {
+            font-size: 16px;
+        }
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .galeria div {
+            text-align: center;
+        }
+
+        .galeria img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
     <title>Desafío 3</title>
 </head>
 <body>
     <header>
-        <h1>LAS SERPIENTES MAS VENENOSAS DEL MUNDO</h1>
+        <h1>LAS SERPIENTES MÁS VENENOSAS DEL MUNDO</h1>
     </header>
 
-    
-       <div class="cobra">
-        <img src="./assets/img/Cobra real fondo.jpg" alt="" width="950px" height="600px">
-         <h3> "Cobra Real albina" <br>La cobra real es una especie de serpiente de la familia Elapidae y único miembro del género Ophiophagus. <br>Se distribuye por India, Bangladés, Birmania, sur de China, Vietnam, Laos, Camboya, Tailandia, Malasia, Indonesia y Filipinas. Es la serpiente venenosa más grande que existe.</h3>
-       </div>
+    <div class="cobra">
+        <img src="assets/img/Cobra real fondo.jpg" alt="Foto de cobra real albina">
+        <h3>"Cobra Real albina" <br>La cobra real es una especie de serpiente de la familia Elapidae y único miembro del género Ophiophagus. <br>Se distribuye por India, Bangladés, Birmania, sur de China, Vietnam, Laos, Camboya, Tailandia, Malasia, Indonesia y Filipinas. Es la serpiente venenosa más grande que existe.</h3>
+    </div>
 
-       
-       <section class="caracteristicas">
+    <section class="caracteristicas">
         <h2>Características</h2>
         <hr>
         <div class="flex">
-        <div>
-            <i class="fa-solid fa-skull-crossbones fa-beat-fade fa-2xl"></i>
-        <p>
-            EXTREMADAMENTE PELIGROSAS: <br> La mayoría de las mordeduras <br> terminan en muerte de la víctima
-        </p>
+            <div>
+                <i class="fas fa-skull-crossbones fa-2x"></i>
+                <p>EXTREMADAMENTE PELIGROSAS: <br> La mayoría de las mordeduras <br> terminan en muerte de la víctima</p>
+            </div>
+            <div>
+                <i class="fas fa-staff-snake fa-2x"></i>
+                <p>TIPOS DE VENENOS: <br> Son las sustancias neurotóxicas <br> mas potentes de la naturaleza</p>
+            </div>
+            <div>
+                <i class="fas fa-book-open fa-2x"></i>
+                <p>BIBLIOGRAFÍA: <br> Conozca y aprenda <br> de estas impresionantes criaturas</p>
+            </div>
         </div>
-        <hr>
-        <div>
-            <i class="fa-solid fa-staff-snake fa-fade fa-2xl"></i>
-        <p>
-            TIPOS DE VENENOS: <br> Son las sustancias neurotóxicas <br> mas potentes de la naturaleza
-        </p>
-        </div>
-        <hr>
-        <div>
-            <i class="fa-solid fa-book-open fa-beat-fade fa-2xl"></i>
-        <p>
-            BIBLIOGRAFIA: <br> Conozca y aprenda <br> de estas impresionantes criaturas
-        </p>
-        </div>
-        </div>
-        </section>
-    
-    
-      
-        <div class="galeria">
+    </section>
 
+    <div class="galeria">
         <div>
-            <img src="./assets/img/Taipan de la costa.jpg" alt="" width="350px" height="200px">
+            <img src="assets/img/Taipan de la costa.jpg" alt="foto Taipán de la costa">
             <h3>Taipan de la Costa</h3>
         </div>
         <div>
-            <img src="./assets/img/serpiente tigre.jpg" alt="" width="350px" height="200px">
+            <img src="assets/img/serpiente tigre.jpg" alt="foto serpiente tigre">
             <h3>Serpiente Tigre</h3>
         </div>
         <div>
-            <img src="./assets/img/mambanegra.jpg" alt="" width="350px" height="200px">
+            <img src="assets/img/mamba negra.jpg" alt="foto mamba negra">
             <h3>Mamba Negra</h3>
         </div>
         <div>
-            <img src="./assets/img/cobra filipina.jpg" alt="" width="350px" 
-        height="200px">
-        <h3>Cobra Filipina</h3>
+            <img src="assets/img/cobra filipina.jpg" alt="foto cobra filipina">
+            <h3>Cobra Filipina</h3>
         </div>
-        
+    </div>
 
+    <footer class="footer">
+        <div>
+            <a href="">WWW.SERPIENTESMASVENENOSAS.COM</a>
         </div>
-        <footer class="footer">
-            <div>
-                <a href="">WWW.SERPIENTESMASVENENOSOS.COM</a>
-            </div>
-            
-        </footer>
-       
+    </footer>
 </body>
 </html>
